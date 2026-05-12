@@ -62,10 +62,14 @@ $(shell rm -rf tmp/logs && /QOpenSys/usr/bin/mkdir -p tmp/logs)
 # Test data files.
 ######
 define TEST_DATA_FILES
+categp.file
 custp.file
+featuresp.file
 ordhdrp.file
 orddtlp.file
+prodfeatp.file
 prodp.file
+productsp.file
 endef
 TEST_DATA_FILES := $(addprefix $(LIBRARY_PATH)/,$(TEST_DATA_FILES))
 
